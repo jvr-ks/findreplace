@@ -20,7 +20,7 @@ Uses with Java 11 now!
 Uses (non free) exe4j to generate Windows executables.  
 
 
-Sorry, help is in german language only!  
+Sorry, help is german language only!  
   
 
 ###### License: GNU V 3, -> License.txt  
