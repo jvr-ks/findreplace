@@ -8,12 +8,12 @@ but is still in use (like COBOL) :-).
 (based on Scala 2.11)  
 
   
-Uses with Java 11 now!   
+Runs with Java 8, 11, 17 now!   
   
   
 ##### Requirements  
   
-* Java Runtime 11  
+* Java Runtime 8 ++  
 * Directory must be writable by the JVM.  
   
   
@@ -21,6 +21,8 @@ Uses (non free) exe4j to generate Windows executables.
 
 
 Sorry, help is german language only!  
+
+"checkversion" mechanism is not usable!  
   
 
 ###### License: GNU V 3, -> License.txt  

@@ -125,7 +125,7 @@ object FindreplaceGui {
 
 		val screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize()
 
-		title = progname + version + " by jvr"
+		title = progname + " " + version + " by jvr"
 		iconImage = java.awt.Toolkit.getDefaultToolkit.getImage(progname + ".png")
 		maximumSize = new java.awt.Dimension(screenSize.width, screenSize.height)
 		minimumSize = new java.awt.Dimension(screenSize.width / 4, screenSize.height / 4)
