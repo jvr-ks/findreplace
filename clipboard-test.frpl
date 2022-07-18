@@ -1,0 +1,16 @@
+#clipboard-test
+
+command=clipboard
+find=ä
+replace=&auml;
+
+find=ü
+replace=&uuml;
+
+find=ö
+replace=&ouml;
+
+find=ß
+replace=&szlig;
+
+#äüö  ßßßß   

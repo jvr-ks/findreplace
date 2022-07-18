@@ -1,0 +1,22 @@
+# Steuerdatei für findreplace
+#
+#
+# Bitte README.txt lesen
+#
+# Test
+#command=autoexit
+command=nobackup
+command=nosound
+
+
+
+
+source=_in_ansi.txt
+target=_out_ansi.txt
+#target=clipboard
+
+fileencoding=auto
+
+find=€
+replace=EUR
+

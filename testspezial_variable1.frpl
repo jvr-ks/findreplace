@@ -1,0 +1,31 @@
+﻿# Steuerdatei für findreplace
+#
+#
+# Bitte README.txt lesen
+#
+#
+# Test
+# Test In- und / Output-Dateien im aktuellen Ordner!
+
+command=autoexit
+command=nobackup
+
+set=_variable1_~Fehler!~.*
+
+#_variable1_
+
+source=_in_variable1.txt
+target=_out_variable1.txt
+fileencoding=auto
+
+
+find=Variable ersetzen Test:(.*)
+replace=Variable ersetzen Test: _variable1_
+
+testname=Variable1
+testequals=Variable ersetzen Test: ERSATZ1
+
+
+
+
+

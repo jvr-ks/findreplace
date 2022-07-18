@@ -1,0 +1,26 @@
+#clipboard-test
+#Before the test, put into clipboard: äüößßßß
+
+#command=autoexit
+command=nobackup
+
+command=clipboard
+
+
+find=ä
+replace=&auml;
+
+find=ü
+replace=&uuml;
+
+find=ö
+replace=&ouml;
+
+find=ß
+replace=&szlig;
+
+
+
+
+testname=CLIPBOARD
+testequals=&auml;&uuml;&ouml;&szlig;&szlig;&szlig;&szlig;

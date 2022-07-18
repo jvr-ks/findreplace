@@ -1,0 +1,22 @@
+﻿# Test-Steuerdatei für findreplace
+#
+# Test In- und / Output-Dateien im aktuellen Ordner!
+# Test ist nur rudimentär!
+
+#Before the test:
+#text to put into file "_out_extractonly.txt":
+#Der Robot Name ist: TEST
+
+command=autoexit
+command=nobackup
+
+source=_in_extractonly.txt
+target=_out_extractonly.txt
+fileencoding=auto
+
+findextract=robot-name:\W*([\w-\.]+)
+replaceextractonly=(Der Robot Name ist: )([\w-\.]+)()
+                       
+testname=ExtractReplace
+testequals=Der Robot Name ist:.*Acme.Spider
+

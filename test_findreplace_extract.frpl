@@ -1,0 +1,25 @@
+﻿# Steuerdatei für findreplace
+#
+#
+# Bitte README.txt lesen
+#
+#
+# Test
+# Test In- und / Output-Dateien im aktuellen Ordner!
+
+command=autoexit
+command=nobackup
+
+source=_in.txt
+target=_out.txt
+fileencoding=auto
+
+findextract=robot-id:\W*([\w-]+)
+writeextract=%s1
+                       
+testname=Extract
+testequals=acme-spider
+
+
+
+

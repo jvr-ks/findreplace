@@ -1,0 +1,107 @@
+﻿# Steuerdatei für findreplace
+#
+#
+# Bitte README.txt lesen
+#
+#
+# Test
+# Test In- und / Output-Dateien im aktuellen Ordner!
+
+#command=autoexit
+command=nobackup
+
+source=_in.txt
+target=_out.txt
+#target=clipboard
+fileencoding=auto
+
+find=Greetings
+replace=Hello World!
+
+testname=Hellotest
+testequals=Hello World!
+
+
+find=\$!"%&'\(\)\*\+,-\./0123456789:;<=>\?@ABCDEFGHIJKLMNOPQRSTUVWXYZ\[\]\^_`abcdefghijklmnopqrstuvwxyz\{\|\}~\\
+replace=Find CharTest passed!
+
+testname=FindCharacterTest
+testequals=Find CharTest passed!
+
+find=ReplaceCharTest
+replace=ReplaceChars: $!"%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~\
+
+testname=ReplaceCharTest
+testequals=ReplaceChars:.*\$!"%&'\(\)\*\+,-\./0123456789:;<=>\?@ABCDEFGHIJKLMNOPQRSTUVWXYZ\[\]\^_`abcdefghijklmnopqrstuvwxyz\{\|\}~\\
+
+find=(?s)<head>(.*)</head>
+replace=<newhead>the old head was removed! didn't hurt...</newhead>
+
+testname=Multiline-replace
+testequals=<newhead>the old head was removed! didn't hurt...</newhead>
+
+
+# Groups
+findg1=<field2>(.*)</field2>
+replaceg1=<field1>%s</field1>
+
+testname=Grouptest1
+testequals=<field1>please put me into field1 tags!</field1>
+
+# 2 Groups: 1st %s = first Group, 2nd %s = second Group 
+findg2=to be or (\w+) to be thats the (\w+)!
+replaceg2=Who has %s a %s
+
+testname=Grouptest2
+testequals=Who has not a question
+
+findc=x3
+replacec=x3
+# no Test
+
+findg2r=(\d+)/(\d+)/2013
+replaceg2r=%s.%s.2013
+
+testname=Grouptest2Reverse
+testequals=Termin.*ist.*der.*3\.5\.2013
+
+findg3=Gruppe(\d).*Gruppe(\d).*Gruppe(\d)
+g3format=g3format321
+replaceg3=Gefundene Gruppen: %s %s %s
+
+testname=Grouptest3
+testequals=3er.*Gruppe.*TEST.*Gefundene.*Gruppen:.*3.*2.*1
+
+
+find= <
+replace=<
+
+find= >
+replace=>
+# no Test
+
+#toLower
+findtl=<(TOLOWER.*?)>
+replacetl=<%s>
+
+testname=ToLower
+testequals=<tolower>
+
+#toUpper
+findtu=<(toupper.*?)>
+replacetu=<%s>
+
+testname=ToUpper
+testequals=<TOUPPER>
+
+find="test"
+replace=test (jetzt ohne Anführungszeichen!)
+
+testname=Quotationmarks
+testequals=[^"]test[^"]
+
+
+#findextract=robot-id:\W*([\w-]+)
+#replaceextract=<bot>%s</bot>
+                       
+

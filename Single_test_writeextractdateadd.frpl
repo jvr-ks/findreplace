@@ -1,0 +1,26 @@
+# Steuerdatei für findreplace
+#
+#
+# Bitte README.txt lesen
+#
+#
+# Test
+# TEST only ok in 2014 !!!
+#
+
+#command=autoexit
+command=nobackup
+
+
+sourceURL=http://www.jvr.de/tools/versions.html
+target=_out.txt
+
+writeextractdateformat=dd.MM.yyyy
+writeextractdateadd=Datum %s
+
+testname=WriteDateAdd
+testequals=2015
+
+
+
+

@@ -1,0 +1,18 @@
+﻿# Test-Steuerdatei für findreplace
+#
+# Test In- und / Output-Dateien im aktuellen Ordner!
+# Test ist nur rudimentär!
+
+#command=autoexit
+#command=nobackup
+
+source=_in_extractonly.txt
+target=_out_extractonly.txt
+fileencoding=auto
+
+findextract=robot-status:\W*([\w-]+)
+writeextractadd=%s1
+                       
+testname=ExtractADD
+testequals=active
+

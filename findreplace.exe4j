@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="6.0.1" transformSequenceNumber="2">
+  <directoryPresets config="C:/___jvr_work/___workspaces/____scala/findreplace/target/scala-2.11" />
+  <application name="findreplace" distributionSourceDir="C:/___jvr_work/___workspaces/____scala/findreplace">
+    <languages>
+      <principalLanguage id="de" customLocalizationFile="" />
+    </languages>
+  </application>
+  <executable name="findreplace" type="2" iconSet="true" iconFile="findreplace.ico" executableDir="." redirectStderr="true" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="1" changeWorkingDirectory="false" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="true" globalSingleInstance="false" singleInstanceActivate="true" dpiAware="java9+" amd64="true">
+    <messageSet />
+    <versionInfo include="false" fileVersion="" fileDescription="" legalCopyright="" internalName="" productName="" companyName="JVR" productVersion="Testversion 0.1" />
+  </executable>
+  <splashScreen show="false" width="-1" height="-1" bitmapFile="open.gif" textOverlay="false">
+    <text>
+      <statusLine x="16" y="35" text="Lade fehlende Dateien..." fontSize="9" fontColor="0,0,0" bold="false" />
+      <versionLine x="20" y="40" text="" fontSize="8" fontColor="0,0,0" bold="false" />
+    </text>
+  </splashScreen>
+  <java mainClass="de.jvr.Findreplace" mainMode="1" vmParameters="&quot;-Xmx512M&quot;" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true" minVersion="1.8" maxVersion="" allowBetaVM="true" jdkOnly="false">
+    <searchSequence>
+      <envVar name="EXE4J_JAVA_HOME" />
+      <envVar name="JAVA_HOME" />
+    </searchSequence>
+    <classPath>
+      <archive location="lib_0/jfugue-4.0.3.jar" failOnError="true" />
+      <archive location="C:/___jvr_work/___workspaces/____scala/findreplace/target/scala-2.11/findreplace-assembly-1.0.jar" failOnError="false" />
+    </classPath>
+    <modulePath />
+    <nativeLibraryDirectories />
+    <vmOptions />
+  </java>
+  <includedFiles />
+  <unextractableFiles />
+</exe4j>

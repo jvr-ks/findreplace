@@ -1,0 +1,25 @@
+﻿# Steuerdatei für findreplace
+#
+#
+# Bitte README.txt lesen
+#
+#
+# Test
+# Test In- und / Output-Dateien im aktuellen Ordner!
+
+command=autoexit
+command=nobackup
+
+source=_in.txt
+target=_out.txt
+fileencoding=auto
+
+findextract=writeextractc:(.*)
+writeextractc=writeextractc:%s1
+                       
+testname=Extractc
+testequals=writeextractc:test
+
+
+
+

@@ -1,0 +1,21 @@
+# Steuerdatei für findreplace
+#
+#
+# Bitte README.txt lesen
+#
+#
+# Test
+
+command=autoexit
+command=nobackup
+
+
+sourceURL=http://www.jvr.de/index.html
+target=test_fromURL_out.txt
+
+
+findextract=<b>Your Browser ID:</b>\W*(\w*)
+writeextract=%s
+
+testname=URL
+testequals=Java
