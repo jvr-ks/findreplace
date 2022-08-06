@@ -35,9 +35,6 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.3.0"
 // https://mvnrepository.com/artifact/net.java.dev.jna/jna
 libraryDependencies += "net.java.dev.jna" % "jna" % "5.12.1"
 
-// https://mvnrepository.com/artifact/net.java.dev.jna/jna-platform
-libraryDependencies += "net.java.dev.jna" % "jna-platform" % "5.12.1"
-
 // https://github.com/Log4s/log4s
 libraryDependencies += "org.log4s" %% "log4s" % "1.8.2"
 
